@@ -4,7 +4,7 @@ import AddItem from './AddItem'
 import { v4 as uuidv4 } from "uuid";
 import { useDispatch } from 'react-redux';
 import invoiceSlice from '../redux/invoiceSlice';
-import { validateSenderStreetAddress, validateSenderPostCode, validateSenderCity, validateCLientEmail, validateCLientName, validateClientCity, validateClientPostCode, validateClientStreetAddress, validateItemCount, validateItemName, validateItemPrice, validateSenderCountry, validateClientCountry } from '../functions/createInvoiceValidator';
+import { validateSenderStreetAddress, validateSenderPostCode, validateSenderCity, validateCLientEmail, validateCLientName, validateClientCity, validateClientPostCode, validateClientStreetAddress, validateItemCount, validateItemName, validateItemPrice, validateSenderCountry, validateClientCountry } from '../Functions/createInvoiceValidator';
 
 
 function CreateInvoice({ openCreateInvoice, setOpenCreateInvoice, invoice, type }) {

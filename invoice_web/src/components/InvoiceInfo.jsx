@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import PaidStatus from './PaidStatus'
 import { useDispatch, useSelector } from 'react-redux'
 import invoiceSlice from '../redux/invoiceSlice'
-import formatDate from '../functions/formatDate'
+import formatDate from '../Functions/formatDate'
 import DeleteModal from './DeleteModal'
 import CreateInvoice from './CreateInvoice'
 
@@ -135,11 +135,11 @@ function InvoiceInfo({ onDelete }) {
                         <div className=' sm:hidden mt-10 bg-[#f9fafe] dark:bg-[#252945] rounded-lg rounded-b-none space-y-4  p-10'>
                             {
                                 invoice.items.map(item => (
-                                    <div className=' justify-between text-lg dark:text-white flex'>
+                                    <div key={item.id} className=' justify-between text-lg dark:text-white flex'>
                                         <h1>{item.name}</h1>
                                         <h1>£{item.total}</h1>
                                     </div> 
-                                )),
+                                ))
                             }
                         </div>
 

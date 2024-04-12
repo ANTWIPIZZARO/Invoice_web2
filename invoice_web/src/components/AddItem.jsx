@@ -1,6 +1,6 @@
 import React from 'react'
 import { TrashIcon } from '@heroicons/react/24/solid'
-import { validateItemCount, validateItemName, validateItemPrice, } from '../functions/createInvoiceValidator'
+import { validateItemCount, validateItemName, validateItemPrice, } from '../Functions/createInvoiceValidator'
 
 
 function AddItem({ itemDetails, setItem, isValidatorActive, onDelete, handelOnChange }) {

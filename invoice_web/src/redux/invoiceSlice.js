@@ -2,9 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import moment from "moment";
 import { useState } from "react";
 import data from "../assets/data/data.json";
-import getForwardDate from "../functions/forwardDate";
-import generateID from "../functions/generateId";
-
+import getForwardDate from "../Functions/forwardDate";
+import generateID from "../Functions/generateId";
 const today = moment().format("YYYY-MM-DD");
 
 const invoiceSlice = createSlice({

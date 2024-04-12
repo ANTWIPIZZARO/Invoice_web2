@@ -3,8 +3,8 @@ import logo from '../assets/logo.png'
 import sun from '../assets/icon-sun.svg'
 import moon from '../assets/icon-moon.svg'
 import useDarkMode from '../Hooks/useDarkMood'
-import profile from '../assets/image-avatar.jpg'
 import { motion } from 'framer-motion'
+import pro from "../assets/WhatsApp Image 2024-03-27 at 00.50.14.jpeg"
 
 
 
@@ -54,7 +54,7 @@ function Navbar() {
 
 
           <div className=' relative  '>
-            <img src={profile} className='h-[50px] rounded-full' />
+            <img src={pro} className='h-[50px] rounded-full' />
           </div>
         </div>
       </header>
@@ -83,7 +83,7 @@ function Navbar() {
 
 
               <div className=' relative  ml-4 mb-4 '>
-                <img src={profile} className='h-[50px] rounded-full' />
+                <img src={pro} className='h-[50px] rounded-full' />
               </div>
             </div>
           </div>
